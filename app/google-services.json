@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "567606042881",
+    "firebase_url": "https://kunyi-e74b7.firebaseio.com",
+    "project_id": "kunyi-e74b7",
+    "storage_bucket": "kunyi-e74b7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:567606042881:android:67cf9f84133fae9f",
+        "android_client_info": {
+          "package_name": "com.aceplus.kunyi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "567606042881-qg40ql6155niunvj45l3s7na208f76nc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.aceplus.kunyi",
+            "certificate_hash": "e5a121cb59caa920a25e90b06c74636488bcd6fd"
+          }
+        },
+        {
+          "client_id": "567606042881-rhekgcjq68u6crjvmnnhvad8uk7jnjqf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCo_1rHE2RqrJeSTdYTdqOL13h1uvvwyM8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "567606042881-rhekgcjq68u6crjvmnnhvad8uk7jnjqf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

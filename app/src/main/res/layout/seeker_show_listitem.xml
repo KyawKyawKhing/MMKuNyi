@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/margin_small"
+        android:background="@drawable/transparent_bg"
+        android:padding="@dimen/margin_medium">
+
+        <TextView
+            android:id="@+id/seekerTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Applicants"
+            android:textAlignment="center"
+            android:textSize="@dimen/text_regular_3x" />
+
+        <View
+            android:id="@+id/viewLine"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/seekerTitle"
+            android:layout_marginBottom="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:background="#efeaea" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvSeeker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/viewLine"
+            android:orientation="vertical" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.aceplus.kunyi.activity.JobDetailActivity">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:background="@android:color/transparent"
+        android:fitsSystemWindows="true"
+        android:theme="@style/NoActionBarAppTheme.AppBarOverlay">
+
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:background="@color/colorPrimary"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:toolbarId="@+id/toolbar">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vpJob"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/jobdetail_bg" />
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/NoActionBarAppTheme.PopupOverlay" />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnApplyJob"
+        android:background="@color/gray_color"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/margin_medium_2"
+                android:orientation="vertical">
+
+                <org.mmtextview.components.MMTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Description"
+                    android:textSize="@dimen/text_regular_3x" />
+
+                <org.mmtextview.components.MMTextView
+                    android:id="@+id/fullDesp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_medium"
+                    android:text="Full Desp Full Desp Full Desp Full Desp Full Desp "
+                    android:textSize="@dimen/text_regular_2x" />
+
+                <org.mmtextview.components.MMTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Location"
+                    android:textSize="@dimen/text_regular_3x" />
+
+                <org.mmtextview.components.MMTextView
+                    android:id="@+id/jobLocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_medium"
+                    android:text="Yangon"
+                    android:textSize="@dimen/text_regular_2x" />
+
+
+                <org.mmtextview.components.MMTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Price"
+                    android:textSize="@dimen/text_regular_3x" />
+
+                <org.mmtextview.components.MMTextView
+                    android:id="@+id/offerAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_medium"
+                    android:text="20000 MMK"
+                    android:textSize="@dimen/text_regular_2x" />
+
+                <org.mmtextview.components.MMTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Phone"
+                    android:textSize="@dimen/text_regular_3x" />
+
+                <org.mmtextview.components.MMTextView
+                    android:id="@+id/phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_medium"
+                    android:text="091243243"
+                    android:textSize="@dimen/text_regular_2x" />
+
+
+                <org.mmtextview.components.MMTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Date"
+                    android:textSize="@dimen/text_regular_3x" />
+
+                <org.mmtextview.components.MMTextView
+                    android:id="@+id/jobDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_medium"
+                    android:text="12/12/2017 - 30/12/2017 "
+                    android:textSize="@dimen/text_regular_2x" />
+
+                <org.mmtextview.components.MMTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Important Notes"
+                    android:textSize="@dimen/text_regular_3x" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rvImportantNote"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvSkills"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Require kills"
+                        android:textSize="@dimen/text_regular_3x" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rvSkill"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvSkills" />
+
+                    <TextView
+                        android:id="@+id/tvWhyShouldHire"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rvSkill"
+                        android:text="Relevant"
+                        android:textSize="@dimen/text_regular_3x" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rvRelevant"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvWhyShouldHire" />
+
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/btnApplyJob"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_margin="@dimen/margin_medium"
+                    android:background="@color/colorPrimary"
+                    android:text="Apply for this Job"
+                    android:textColor="@color/white_color" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.aceplus.kunyi">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".KuNyiApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/NoActionBarAppTheme">
+        <activity android:name=".activity.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.MainActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.RegisterActivity"
+            android:theme="@style/NoActionBarAppTheme" />
+        <activity
+            android:name=".activity.JobDetailActivity"
+            android:parentActivityName=".activity.MainActivity"
+            android:theme="@style/NoActionBarAppTheme" />
+        <activity
+            android:name=".activity.ApplicantProfileActivity"
+            android:label="@string/title_activity_applicant_profile"
+            android:parentActivityName=".activity.JobDetailActivity"
+            android:theme="@style/NoActionBarAppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.aceplus.kunyi.activity.JobDetailActivity" />
+        </activity>
+        <activity
+            android:name=".activity.JobPostActivity"
+            android:label="Job Post"
+            android:parentActivityName=".activity.MainActivity" />
+        <activity android:name=".activity.JobApplyActivity" />
+    </application>
+
+</manifest>
